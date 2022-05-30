@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(black, brown);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+content {
+  background-color: rgba(250, 156, 200, 0.801);
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  font-size: 5rem;
+}
+
+img {
+  width: 22vw;
+  background-size: cover;
+}
+
+p {
+  padding: 5vh 0;
+  font-size: 1.8rem;
+  max-width: 50vw;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+li {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+table {
+  width: 45vw;
+  font-size: 2rem;
+  text-align: center;
+  border: solid green;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+  padding: 0;
+  border: solid rgb(20, 4, 36);
+  border-bottom: none;
+}
+
+footer {
+  margin: 5vh 0;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  font-size: 2rem;
+  text-decoration: none;
+}
