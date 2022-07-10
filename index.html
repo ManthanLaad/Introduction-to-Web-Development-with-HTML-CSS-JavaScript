@@ -5,6 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="application/javascript">
+      function checkTestField() {
+        const testField = document.body.querySelector("#test");
+        const testFieldVal = testField.value;
+        if (testFieldVal === "") {
+          window.alert("Enter a value in test Field");
+          testField.focus();
+          return false;
+        } else {
+          console.log("Test Value: ", testFieldVal);
+          return true;
+        }
+      }
+    </script>
     <title>Tommy's World 🌏</title>
   </head>
   <body>
@@ -20,10 +34,14 @@
         One minute of everything at once, and anything before is nothing.
         Everything after, nothing. Nothing in comparison to that one minute."
       </p>
-      <form action="" >
-        <fieldset form="user_contact" name="user_details" style="padding:1vh 2vw; font-size: 1.5rem;">
+      <form onsubmit="return checkTestField()">
+        <fieldset
+          form="user_contact"
+          name="user_details"
+          style="padding: 1vh 2vw; font-size: 1.5rem"
+        >
           <legend>Contact Details</legend>
-          <label for="fname">First Name:</label>
+          <!-- <label for="fname">First Name:</label>
           <input type="text" name="fname" id="fname" placeholder="Thomas" required>
           <br><br>
           <label for="lname">Last Name:</label>
@@ -37,11 +55,19 @@
           <br><br>
           <label for="dob">Date of Birth:</label>
           <input type="date" name="dob" id="dob">
-          <br><br>
-          <input type="submit" value="Submit" style="padding:1vh 1vw; font-size: 1.8rem;">
+          <br><br> -->
+          <label for="test">Test Field:</label>
+          <input type="text" name="test" id="test" placeholder="Test Field" />
+          <br /><br />
+          <input
+            type="submit"
+            value="Submit"
+            style="padding: 1vh 1vw; font-size: 1.8rem"
+          />
         </fieldset>
       </form>
-      
+      <main></main>
+
       <footer>
         <a
           target="_blank"
@@ -57,6 +83,7 @@
           >Twitter</a
         >
       </footer>
+      <script src="./app.js"></script>
     </content>
   </body>
 </html>
